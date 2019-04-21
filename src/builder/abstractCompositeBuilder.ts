@@ -11,6 +11,9 @@ import { ICompositeBuildResult } from './abstractCompositeBuilder/compositeBuild
 import { SubBuilderRecord } from './abstractCompositeBuilder/subBuilderRecord';
 import { AbstractSimpleBuilder } from './abstractSimpleBuilder';
 
+/**
+ * Class to compose several builders into one
+ */
 export abstract class AbstractCompositeBuilder<TOptions, TBuildResult extends ICompositeBuildResult>
     extends AbstractSimpleBuilder<TOptions, TBuildResult> 
     implements ISimpleBuilder<TBuildResult> 
@@ -132,7 +135,10 @@ export abstract class AbstractCompositeBuilder<TOptions, TBuildResult extends IC
             compositeAssets[compositeResultAssetKey] = subBuilderAssets[subBuilderAssetKey];
         }
     }
-    
+
+    /**
+     * Dispose disposable assets after build
+     */
     protected async disposeOutAssets(outAssets: Map<string, IBuildAssetsCollection>) {
         for (const targetName of outAssets.keys()) {
             const assetCollection = outAssets.get(targetName);
