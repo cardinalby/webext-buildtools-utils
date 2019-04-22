@@ -22,44 +22,44 @@ export class LoggerWrapper {
     }
 
     // noinspection JSUnusedGlobalSymbols
-    public log(level: LogLevels, message: string, extra?: any) {
+    public log(level: LogLevels, message: string, ...extra: any[]) {
         if (this.logMethod) {
-            this.logMethod(level, message, extra);
+            this.logMethod(level, message, ...extra);
         }
     }
 
     // noinspection JSUnusedGlobalSymbols
-    public error(message: string, extra?: any) {
-        this.log(LogLevels.ERROR, message, extra);
+    public error(message: string, ...extra: any[]) {
+        this.log(LogLevels.ERROR, message, ...extra);
     }
 
     // noinspection JSUnusedGlobalSymbols
-    public warn(message: string, extra?: any) {
-        this.log(LogLevels.WARN, message, extra);
+    public warn(message: string, ...extra: any[]) {
+        this.log(LogLevels.WARN, message, ...extra);
     }
 
     // noinspection JSUnusedGlobalSymbols
-    public info(message: string, extra?: any) {
-        this.log(LogLevels.INFO, message, extra);
+    public info(message: string, ...extra: any[]) {
+        this.log(LogLevels.INFO, message, ...extra);
     }
 
     // noinspection JSUnusedGlobalSymbols
-    public http(message: string, extra?: any) {
-        this.log(LogLevels.HTTP, message, extra);
+    public http(message: string, ...extra: any[]) {
+        this.log(LogLevels.HTTP, message, ...extra);
     }
 
     // noinspection JSUnusedGlobalSymbols
-    public verbose(message: string, extra?: any) {
-        this.log(LogLevels.VERBOSE, message, extra);
+    public verbose(message: string, ...extra: any[]) {
+        this.log(LogLevels.VERBOSE, message, ...extra);
     }
 
     // noinspection JSUnusedGlobalSymbols
-    public debug(message: string, extra?: any) {
-        this.log(LogLevels.DEBUG, message, extra);
+    public debug(message: string, ...extra: any[]) {
+        this.log(LogLevels.DEBUG, message, ...extra);
     }
 
     // noinspection JSUnusedGlobalSymbols
-    public silly(message: string, extra?: any) {
-        this.log(LogLevels.SILLY, message, extra);
+    public silly(message: string, ...extra: any[]) {
+        this.log(LogLevels.SILLY, message, ...extra);
     }
 }

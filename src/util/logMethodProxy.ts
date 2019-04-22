@@ -30,6 +30,6 @@ export function logMethodProxy(logMethod: ILogMethod, options: ILogMethodProxyOp
             message = message + options.msgSuffix;
         }
 
-        logMethod(level, message, meta);
+        logMethod(level, message, ...meta);
     }
 }

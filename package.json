@@ -1,6 +1,6 @@
 {
   "name": "webext-buildtools-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common utils for webext-buildtools builders",
   "main": "dist",
   "keywords": [
@@ -39,7 +39,7 @@
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.2.4",
-    "webext-buildtools-builder-types": "^1.0.5"
+    "webext-buildtools-builder-types": "^1.0.6"
   },
   "scripts": {
     "build": "tsc",
