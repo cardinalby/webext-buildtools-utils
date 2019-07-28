@@ -1,6 +1,6 @@
 {
   "name": "webext-buildtools-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common utils for webext-buildtools builders",
   "main": "dist",
   "keywords": [
@@ -23,7 +23,7 @@
     "LICENSE"
   ],
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "fs-extra": "^7.0.1",
     "sanitize-filename": "^1.6.1",
     "temp": "^0.9.0",
