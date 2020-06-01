@@ -1,6 +1,6 @@
 {
   "name": "webext-buildtools-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Common utils for webext-buildtools builders",
   "main": "dist",
   "keywords": [
@@ -36,7 +36,7 @@
     "@types/sanitize-filename": "^1.1.28",
     "@types/stream-buffers": "^3.0.2",
     "@types/temp": "^0.8.32",
-    "tslint": "^5.17.0",
+    "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.2.4",
     "webext-buildtools-builder-types": "^1.0.7"
