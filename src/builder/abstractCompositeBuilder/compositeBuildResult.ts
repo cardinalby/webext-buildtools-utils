@@ -3,7 +3,7 @@ import { IBuildAssetsCollection, IBuildResult } from 'webext-buildtools-builder-
 import { BaseBuildResult } from '../../buildResult/baseBuildResult';
 
 export interface ICompositeBuildResult extends IBuildResult {
-    errors: Array<{targetName: string, error: Error}>;
+    errors: {targetName: string, error: Error}[];
 }
 
 export class CompositeBuildResult<TAssetsCollection extends IBuildAssetsCollection>

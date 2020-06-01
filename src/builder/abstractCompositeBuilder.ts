@@ -76,7 +76,7 @@ export abstract class AbstractCompositeBuilder<TOptions, TBuildResult extends IC
 
     protected abstract createBuildResult(): TBuildResult;
 
-    protected getOrderedBuilders(): Array<SubBuilderRecord<this, any>> {
+    protected getOrderedBuilders(): SubBuilderRecord<this, any>[] {
         const buildersArray = Array.from(this._builders.values());
         return buildersArray.sort((a, b) => {
             return a.buildOrder - b.buildOrder;
