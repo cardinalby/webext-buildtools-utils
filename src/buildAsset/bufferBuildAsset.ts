@@ -1,5 +1,5 @@
 import { Readable, Stream } from 'stream';
-import { WritableStreamBuffer } from 'stream-buffers';
+import { WritableStreamBuffer } from '../util/writableStreamBuffer';
 import { BasicTypeBuildAsset } from './basicTypeBuildAsset';
 
 function writeFinished(stream: Stream) {
@@ -19,7 +19,11 @@ export class BufferBuildAsset extends BasicTypeBuildAsset<Buffer> {
             writeStream.emit('error', err);
         });
         await writeFinished(writeStream);
+        const contents = writeStream.getContents();
+        if (contents === false) {
+            throw new Error('Empty buffer');
+        }
 
-        return new BufferBuildAsset(writeStream.getContents());
+        return new BufferBuildAsset(contents);
     }
 }

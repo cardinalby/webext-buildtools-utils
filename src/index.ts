@@ -2,6 +2,7 @@ export * from './util/arrayUtil';
 export * from './util/loggerWrapper';
 export * from './util/logMethodProxy';
 export * from './util/createTempDir';
+export * from './util/writableStreamBuffer';
 export * from './buildAsset/abstractDisposableBuildAsset';
 export * from './buildAsset/basicTypeBuildAsset';
 export * from './buildAsset/bufferBuildAsset';
