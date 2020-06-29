@@ -1,6 +1,6 @@
 {
   "name": "webext-buildtools-utils",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Common utils for webext-buildtools builders",
   "main": "dist",
   "keywords": [
@@ -26,7 +26,8 @@
     "lodash": "^4.17.15",
     "fs-extra": "^7.0.1",
     "sanitize-filename": "^1.6.1",
-    "temp": "^0.9.0"
+    "temp": "^0.9.0",
+    "unzipper": "^0.10.11"
   },
   "devDependencies": {
     "@types/fs-extra": "^5.0.4",
@@ -34,6 +35,7 @@
     "@types/node": "^10.12.20",
     "@types/sanitize-filename": "^1.1.28",
     "@types/temp": "^0.8.32",
+    "@types/unzipper": "^0.10.3",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.2.4",
