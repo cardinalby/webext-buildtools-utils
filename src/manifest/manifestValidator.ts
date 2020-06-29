@@ -1,7 +1,7 @@
 import {IManifestObject} from "../../declarations/manifest";
 
 export function validateManifestFile(contents: Buffer|string): IManifestObject {
-    let manifestObject: { [k: string]: any }|undefined = undefined;
+    let manifestObject: { [k: string]: any }|undefined;
     try {
         manifestObject = JSON.parse(contents.toString());
     } catch (err) {
