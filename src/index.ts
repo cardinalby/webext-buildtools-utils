@@ -17,3 +17,5 @@ export * from './builder/abstractCompositeBuilder/callbacksCollection';
 export * from './builder/abstractCompositeBuilder/compositeBuildResult';
 export * from './builder/abstractCompositeBuilder/subBuilderRecord';
 export * from './builder/abstractCompositeBuilder/passOnAsset';
+
+export { IManifestObject } from '../declarations/manifest';

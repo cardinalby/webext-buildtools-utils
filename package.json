@@ -1,6 +1,6 @@
 {
   "name": "webext-buildtools-utils",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Common utils for webext-buildtools builders",
   "main": "dist",
   "keywords": [
@@ -20,6 +20,7 @@
   "files": [
     "dist/**/*.d.ts",
     "dist/**/*.js",
+    "declarations/**/*.d.ts",
     "LICENSE"
   ],
   "dependencies": {
