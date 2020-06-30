@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/cardinalby/webext-buildtools-utils.svg?branch=master)](https://travis-ci.com/cardinalby/webext-buildtools-utils)
+![npm-publish](https://github.com/cardinalby/webext-buildtools-utils/workflows/npm-publish/badge.svg)
 ### Introduction
 Common utils for *webext-buildtools* builders.
 
