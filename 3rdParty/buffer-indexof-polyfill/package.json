@@ -1,6 +1,0 @@
-{
-  "name": "buffer-indexof-polyfill",
-  "version": "1.0.1",
-  "description": "Local substitution for buffer-indexof-polyfill due to Buffer constructor deprecation",
-  "main": "index.js"
-}
