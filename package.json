@@ -1,6 +1,6 @@
 {
   "name": "webext-buildtools-utils",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Common utils for webext-buildtools builders",
   "main": "dist",
   "keywords": [
@@ -24,7 +24,7 @@
     "LICENSE"
   ],
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "fs-extra": "^7.0.1",
     "buffer-indexof-polyfill": "github:cardinalby/buffer-indexof-polyfill",
     "sanitize-filename": "^1.6.1",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^5.0.4",
-    "@types/lodash": "^4.14.121",
+    "@types/lodash": "^4.14.157",
     "@types/node": "^10.12.20",
     "@types/sanitize-filename": "^1.1.28",
     "@types/temp": "^0.8.32",
