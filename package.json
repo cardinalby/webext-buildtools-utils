@@ -26,7 +26,7 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "fs-extra": "^10.1.0",
-    "buffer-indexof-polyfill": "github:cardinalby/buffer-indexof-polyfill",
+    "buffer-indexof-polyfill": "git+https://github.com/cardinalby/buffer-indexof-polyfill",
     "sanitize-filename": "^1.6.3",
     "temp": "^0.9.4",
     "unzipper": "^0.10.11"
