@@ -5,7 +5,7 @@ export function validateManifestFile(contents: Buffer|string): IManifestObject {
     try {
         manifestObject = JSON.parse(contents.toString());
     } catch (err) {
-        throw new Error("Can't parse JSON in manifest file: " + err.message);
+        throw new Error("Can't parse JSON in manifest file: " + String(err));
     }
     if (manifestObject !== undefined) {
         return validateManifestObject(manifestObject);

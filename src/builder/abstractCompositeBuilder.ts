@@ -113,10 +113,11 @@ export abstract class AbstractCompositeBuilder<TOptions, TBuildResult extends IC
                 return false;
             }
         } catch (error) {
-            compositeBuildResult.errors.push({ targetName, error });
+            const err = error instanceof Error ? error : new Error(String(error));
+            compositeBuildResult.errors.push({ targetName, error: err });
             if (this._stopOnError || this._stopOnWarning) {
-                this._logWrapper.error(`${targetName} finished with error: ${error}. Stopping build`);
-                throw error;
+                this._logWrapper.error(`${targetName} finished with error: ${err}. Stopping build`);
+                throw err;
             }
         }
 
@@ -163,7 +164,7 @@ export abstract class AbstractCompositeBuilder<TOptions, TBuildResult extends IC
                             await disposableAsset.dispose();
                         }
                     } catch (e) {
-                        this._logWrapper.error('Error during disposing temporary out asset: ' + e.toString());
+                        this._logWrapper.error('Error during disposing temporary out asset: ' + String(e));
                     }
                 }
             }

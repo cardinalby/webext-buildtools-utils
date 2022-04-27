@@ -12,7 +12,7 @@ export async function extractManifestFromZipFile(zipFilePath: string): Promise<I
     try {
         buffer = await unzipFile(readStream, MANIFEST_FILE_NAME);
     } catch (e) {
-        throw new Error(`Error reading ${zipFilePath}: ` + e.message);
+        throw new Error(`Error reading ${zipFilePath}: ` + String(e));
     }
     return validateManifestFile(buffer);
 }

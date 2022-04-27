@@ -46,7 +46,7 @@ export class WritableStreamBuffer extends Writable {
   };
 
   // noinspection JSUnusedGlobalSymbols
-  public getContentsAsString(encoding?: string, length?: number): string|false {
+  public getContentsAsString(encoding?: BufferEncoding, length?: number): string|false {
     if (!this._size) {
       return false;
     }

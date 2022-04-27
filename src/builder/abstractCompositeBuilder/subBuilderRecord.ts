@@ -121,7 +121,8 @@ export class SubBuilderRecord<
 
         }
         catch (error) {
-            this._onError.fire(this._builder, error, compositeBuildResult);
+            const err = error instanceof Error ? error : new Error(String(error));
+            this._onError.fire(this._builder, err, compositeBuildResult);
             throw error;
         }
     }

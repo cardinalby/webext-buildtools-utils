@@ -25,7 +25,7 @@ export abstract class AbstractSimpleBuilder<TOptions, TBuildResult extends IBuil
     }
 
     public abstract getTargetName(): string;
-    public abstract async build(): Promise<TBuildResult>;
+    public abstract build(): Promise<TBuildResult>;
 
     // noinspection JSUnusedGlobalSymbols
     public getOptions(): TOptions {
