@@ -1,6 +1,6 @@
 {
   "name": "webext-buildtools-utils",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Common utils for webext-buildtools builders",
   "main": "dist",
   "keywords": [

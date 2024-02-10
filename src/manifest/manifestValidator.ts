@@ -25,12 +25,6 @@ export function validateManifestObject(data: { [k: string]: any }|IManifestObjec
     if (typeof data.version !== 'string') {
         errors.push('version is missing or not a string');
     }
-    if (data.author !== undefined && typeof data.author !== 'string') {
-        errors.push('author is not a string');
-    }
-    if (data.description !== undefined && typeof data.description !== 'string') {
-        errors.push('description is not a string');
-    }
     if (errors.length > 0) {
         throw new Error(errors.join('; '));
     }
